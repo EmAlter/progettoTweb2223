@@ -1,0 +1,46 @@
+.profile_info,
+.table_saved {
+    width: 250pt;
+    margin: 2em 2em 2em 2em;
+    float: left;
+}
+
+.add_new_book,
+.add_new_author {
+    width: 250pt;
+    margin: 2em 2em 2em 2em;
+    float: left;
+    clear: both;
+}
+
+.profile_info div {
+    text-align: center;
+    margin-top: 1em;
+    width: 100pt;
+
+}
+
+#username {
+    font-size: 18pt;
+
+}
+
+p {
+    text-align: center;
+    font-size: large;
+    color: cornflowerblue;
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1pt solid #909090;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    white-space: nowrap;
+    padding-right: 1em;
+    padding-left: 1em;
+}

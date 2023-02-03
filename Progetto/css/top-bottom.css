@@ -1,0 +1,80 @@
+/*
+Il documento si occupa di applicare lo stile a :
+  -il banner
+  -il main
+  -il footer
+Ognuno di questi elementi viene importanto in ogni pagina del sito
+*/
+
+
+body,
+#frame,
+html {
+  margin: 0%;
+  height: 100%;
+}
+
+#frame {
+  display: flex;
+  flex-direction: column;
+}
+
+#banner {
+  background-color: cornflowerblue;
+  color: white;
+  font-family: 'Orienta', sans-serif;
+  padding: 5pt;
+}
+
+#main {
+  margin-left: auto;
+  margin-right: auto;
+  height: 80%;
+  width: 100%;
+  overflow-y: auto;
+  font-family: 'Orienta', sans-serif;
+  background-color: #cce0ff;
+}
+
+#bottom {
+  background-color: cornflowerblue;
+  height: 10%;
+  margin-bottom: 0%;
+  position: relative;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+  width: 75px;
+  height: 75px;
+  justify-content: center;
+  display: flex;
+}
+
+#login,
+#signup,
+#logout,
+#profile,
+#search {
+  padding: 8px;
+  background-color: cornflowerblue;
+  border: none;
+  font-family: 'Orienta', sans-serif;
+  color: white;
+  transition-duration: 0.5s;
+
+}
+
+#login:hover,
+#signup:hover,
+#logout:hover,
+#profile:hover,
+#search:hover {
+  background-color: darkslateblue;
+}

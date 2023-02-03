@@ -1,0 +1,61 @@
+.signup, .login {
+    margin: auto;
+    width: 250pt;
+    text-align: center;
+}
+
+.middleimg {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 125pt;
+}
+
+p {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+fieldset {
+    margin: 20px 20px 20px 20px;
+    overflow: auto;
+    border: 2pt solid #909090;
+    background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.25)
+  );
+
+  padding: 1em;
+}
+
+label {
+    padding-top: 1em;
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+    clear: both;
+}
+
+::placeholder {
+    color: cornflowerblue;
+}
+
+#submit_usandpassw {
+    border-radius: 12px;
+    transition-duration: 0.5s;
+    font-size: 16px;
+    background-color: white;
+    border: 2px solid darkcyan;
+}
+
+#submit_usandpassw:hover {
+    background-color: darkcyan;
+    margin: 0pt;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    color: white;
+}
+
+.logout p{
+    font-size: 18pt;
+
+}

@@ -8,7 +8,7 @@ $(document).ready(function () {
 function searchBooks() {
     var book = $("#searchbar").find('[name = "book"]').val();
     $.ajax({
-        url: "/Progetto/search/search.php", //script alla quale invio i dati
+        url: "/Progetto/search/searchpage.php", //script alla quale invio i dati
         type: "GET",
         data: { "book": book },
         beforeSend: function () {

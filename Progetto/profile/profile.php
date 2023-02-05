@@ -8,7 +8,7 @@ include("../functions/resolve_samesite_error.php");
 ?>
 
 <script src="profile.js" type="module"></script>
-<link href="../css/index-search.css" type="text/css" rel="stylesheet">
+<link href="../css/profile.css" type="text/css" rel="stylesheet">
 
 </header>
 

@@ -1,16 +1,48 @@
-.profile_info,
-.table_saved {
-    width: 250pt;
-    margin: 2em 2em 2em 2em;
-    float: left;
+/* Il documento si occupa di applicare lo stile al file ../profile/profile.php*/
+
+h2 {
+    text-align: center;
+    font-weight: lighter;
+    font-family: 'Open Sans', sans-serif;
+    color: darkcyan;
 }
 
-.add_new_book,
+.all_info_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile_container,
+.admin_container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20pt;
+}
+
+.profile_container {
+    clear: right;
+}
+
+.profile_info,
+.table_saved {
+    width: 50%;
+}
+
+
+.id_all_authors {
+    width: 33%;
+    font-size: 13px;
+
+}
+
 .add_new_author {
-    width: 250pt;
-    margin: 2em 2em 2em 2em;
-    float: left;
-    clear: both;
+    width: 33%;
+    font-size: 13px;
+}
+
+.add_new_book {
+    width: 34%;
+    font-size: 13px;
 }
 
 .profile_info div {
@@ -20,27 +52,91 @@
 
 }
 
-#username {
+.profile_info h2 {
     font-size: 18pt;
+}
 
+.saved_books,
+.saved_id_authors {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    border: 2pt solid #909090;
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.25));
+
+    border-radius: 12px;
+}
+
+.saved_books td,
+.saved_id_authors td {
+    white-space: nowrap;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.result_author,
+.result_book {
+    text-align: center;
+    color: red;
+    font-weight: 100;
+}
+
+.profile_info div {
+    margin: auto;
+    margin-top: 1em;
+}
+
+#remove,
+#removed {
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+fieldset {
+    margin: 20px 20px 20px 20px;
+    display: inline-block;
+    overflow: auto;
+    border: 2pt solid #909090;
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.25));
+
+    border-radius: 12px;
+}
+
+label {
+    padding-top: 1em;
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+    clear: both;
+}
+
+::placeholder {
+    color: cornflowerblue;
+}
+
+#admin_book,
+#admin_author {
+    margin: auto;
+    border-radius: 12px;
+    transition-duration: 0.5s;
+    font-size: 16px;
+    background-color: white;
+    border: 2px solid darkcyan;
+}
+
+#admin_book:hover,
+#admin_author:hover {
+    background-color: darkcyan;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    color: white;
 }
 
 p {
     text-align: center;
-    font-size: large;
-    color: cornflowerblue;
-    font-weight: bold;
-}
-
-table {
-    border-collapse: collapse;
-    border: 1pt solid #909090;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-td {
-    white-space: nowrap;
-    padding-right: 1em;
-    padding-left: 1em;
+    font-family: 'Open Sans', sans-serif;
 }

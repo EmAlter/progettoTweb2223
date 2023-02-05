@@ -1,6 +1,8 @@
-.signup, .login {
+/*Il documento applica lo stile a i files ../login/login.php/ e ../login/signup.php*/
+
+.signup,
+.login {
     margin: auto;
-    width: 250pt;
     text-align: center;
 }
 
@@ -11,22 +13,22 @@
     width: 125pt;
 }
 
-p {
+p,
+.err {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
 
 fieldset {
     margin: 20px 20px 20px 20px;
+    display: inline-block;
     overflow: auto;
     border: 2pt solid #909090;
-    background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.25)
-  );
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.25));
 
-  padding: 1em;
+    border-radius: 12px;
 }
 
 label {
@@ -40,7 +42,8 @@ label {
     color: cornflowerblue;
 }
 
-#submit_usandpassw {
+#submit_usandpassw { /*il bottone di login e signup hanno lo stesso ID*/
+    margin: auto;
     border-radius: 12px;
     transition-duration: 0.5s;
     font-size: 16px;
@@ -48,14 +51,12 @@ label {
     border: 2px solid darkcyan;
 }
 
-#submit_usandpassw:hover {
+#submit_usandpassw:hover { /*il bottone di login e signup hanno lo stesso ID*/
     background-color: darkcyan;
-    margin: 0pt;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     color: white;
 }
 
-.logout p{
-    font-size: 18pt;
-
+.err {
+    color: red;
 }

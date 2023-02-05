@@ -1,7 +1,7 @@
 <?php include("../html/top.html"); ?>
 
-<script src="addNewUser.js" type="module"></script>
-<link href="../css/index-search.css" type="text/css" rel="stylesheet">
+<script src="signup.js" type="module"></script>
+<link href="../css/login-signup.css" type="text/css" rel="stylesheet">
 
 </header>
 

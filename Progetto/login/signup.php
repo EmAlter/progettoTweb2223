@@ -1,4 +1,6 @@
-<?php include("../html/top.html"); ?>
+<?php include("../html/top.html"); 
+include("../functions/resolve_samesite_error.php");
+?>
 
 <script src="signup.js" type="module"></script>
 <link href="../css/login-signup.css" type="text/css" rel="stylesheet">

@@ -3,7 +3,9 @@ session_start();
 if (isset($_SESSION["username"])) {
         unset($_SESSION["username"]); //unset la sessione precedente di login o signup
 }
-include("../html/top.html"); ?>
+include("../html/top.html");
+include("../functions/resolve_samesite_error.php");
+?>
 
 <script src="login.js" type="module"></script>
 <link href="../css/login-signup.css" type="text/css" rel="stylesheet">

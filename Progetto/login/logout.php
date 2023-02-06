@@ -1,8 +1,9 @@
 <?php
 session_start();
+include("../html/top.html"); 
+include("../functions/resolve_samesite_error.php");
 ?>
 
-<?php include("../html/top.html"); ?>
 <link href="../css/login-signup.css" type="text/css" rel="stylesheet">
 <script src="logout.js" type="text/javascript"></script>
 

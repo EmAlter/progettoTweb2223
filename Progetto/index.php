@@ -4,6 +4,7 @@
 
 session_start();
 include("../Progetto/html/top.html");
+include("../Progetto/functions/resolve_samesite_error.php");
 ?>
 
 <link href="../Progetto/css/index-search.css" type="text/css" rel="stylesheet">

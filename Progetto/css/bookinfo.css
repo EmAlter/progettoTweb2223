@@ -10,7 +10,8 @@
 }
 
 .binfo {
-    margin: 110px 110px 20px 110px;
+    margin: 80pt 120pt 80pt 120pt;
+    justify-content: center;
     overflow: auto;
     border: 2pt solid #909090;
     background-image: linear-gradient(to bottom,

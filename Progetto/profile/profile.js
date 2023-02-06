@@ -168,7 +168,9 @@ function addNewAuthor() {
                 }
                 else {
                     $(".result_author").html(json_author.success);
-                    uploadAuthorTable();
+                    var row = $('<tr><td>' + json_author.id + '</td>'
+                    + '<td>' + fullname + '</td></tr>');
+                    $(".saved_id_authors").append(row);
                 }
 
             }

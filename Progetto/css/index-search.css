@@ -64,7 +64,6 @@ h2 {
 }
 
 #poster:hover {
-    box-shadow: #909090;
     filter: brightness(125%);
     /*filter: grayscale(1); gray the image when hover it, instead of increasing brightness*/
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);

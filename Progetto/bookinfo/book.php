@@ -3,6 +3,7 @@
 
 session_start();
 include("../html/top.html");
+include("../functions/resolve_samesite_error.php");
 ?>
 
 <script src="../bookinfo/book.js" type="text/javascript"></script>

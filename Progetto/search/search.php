@@ -4,6 +4,7 @@
 
 session_start();
 include("../html/top.html");
+include("../functions/resolve_samesite_error.php");
 ?>
 
 <script src="search.js" type="text/javascript"></script>

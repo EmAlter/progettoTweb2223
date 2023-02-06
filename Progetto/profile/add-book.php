@@ -63,9 +63,13 @@ try {
             $db->query("INSERT INTO author(fullname, birth)
                     VALUES($fullname, $birth);");
 
+            $id = $db->query("SELECT id FROM author WHERE fullname = $fullname AND birth = $birth;");
+            $id = $id->fetch(PDO::FETCH_ASSOC);
+
 
             print json_encode(array(
-                    'success' => "Author added to the database with id: " . ((int)$last_autor + 1)
+                    'success' => "Author added to the database with id: " . ((int)$last_autor + 1),
+                    'id' => $id["id"]
             ));
             
         }
@@ -74,8 +78,6 @@ try {
     /*
     Script per aggiungere un nuovo libro nel database
     */
-        
-
     if (isset($_POST["book_name"]) && isset($_POST["year"]) && isset($_POST["author_id"])
         && isset($_POST["main_character"]) && isset($_POST["synopsis"]) && isset($_FILES["poster"])) {
         
@@ -108,16 +110,19 @@ try {
             $title = $db->quote($title);
             $author_id = $db->quote($author_id);
             $year = $db->quote($year);
-            
-            $main_character = $db->quote($main_character);
-            if($main_character == "''") {
+
+            if($main_character == "") {
                 $main_character = NULL;
             }
+            $main_character = $db->quote($main_character);
+            
             $synopsis = $db->quote($synopsis);
             $img_url = $db->quote($img_url);
 
-            $db->query("INSERT INTO books(author_id, name, year, main_character, poster, synopsis) 
-                        VALUES($author_id, $title, $year, $main_character, $img_url, $synopsis);");
+
+
+            $db->query("INSERT INTO books(poster, author_id, name, year, synopsis, main_character) 
+                        VALUES($img_url, $author_id, $title, $year, $synopsis, $main_character);");
 
 
             print json_encode(array(

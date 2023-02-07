@@ -32,12 +32,6 @@ $(document).ready(function () {
     $("#admin_author").on('click', addNewAuthor);
 
     /*
-    Richiamo la funzione che serve a eliminare un libro letto dal database.
-    I bottoni sono aggiunti dinamicamente
-   */
-    $(document).on('click', "#delete_from_list", deleteFromList);
-
-    /*
     Permette l'eliminazione di un elemento dalla tabella dei libri rilasciandolo nell'apposito box.
     Richiama la funzione deleteFromList che si occupa di eliminare il libro dal database.
     */
@@ -76,8 +70,10 @@ function allBookAdded() {
                 for (let i = 0; i < data.length; i++) {
                     var row = $('<tr id="' + data[i].id_book + '"><td>' + data[i].id_book + '</td>'
                         + '<td>' + data[i].title + '</td>'
-                        + '<td>' + data[i].date + '</td></tr>');
-                    /*Rende ogni oggetto (riga) della tabella grabbabile*/
+                        + '<td>' + data[i].date + '</td>'
+                        + '</tr>');
+
+                    /*Rende ogni oggetto (riga) della tabella "grabbabile"*/
                     row.draggable(
                         { cursor: 'grab' }, //Modifica il tipo di cursore quando l'oggetto è grabbato
                         { revert: true }
@@ -95,6 +91,7 @@ function allBookAdded() {
 
     });
 };
+
 /*
 Ajax richiamato per ottenere le informazioni dell'account loggato
 */
@@ -169,7 +166,7 @@ function addNewAuthor() {
                 else {
                     $(".result_author").html(json_author.success);
                     var row = $('<tr><td>' + json_author.id + '</td>'
-                    + '<td>' + fullname + '</td></tr>');
+                        + '<td>' + fullname + '</td></tr>');
                     $(".saved_id_authors").append(row);
                 }
 
@@ -249,6 +246,7 @@ function addNewBook() {
     }
 
 };
+
 /*
 Permette la cancellazione del libro letto selezionato tramite richiesta ajax
 */

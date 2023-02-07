@@ -6,12 +6,15 @@ Il documento si occupa di applicare lo stile a :
 Ognuno di questi elementi viene importanto in ogni pagina del sito
 */
 
-
+html,
 body,
-#frame,
-html {
+#frame {
   margin: 0%;
   height: 100%;
+}
+
+#frame {
+  display: flex;
 }
 
 #frame {
@@ -39,8 +42,6 @@ html {
 #bottom {
   background-color: cornflowerblue;
   height: 10%;
-  margin-bottom: 0%;
-  position: relative;
 }
 
 ul {
@@ -77,4 +78,27 @@ li {
 #profile:hover,
 #search:hover {
   background-color: darkslateblue;
+}
+
+.bottom_info {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+
+#validator,
+#matricola {
+  height: 50%;
+}
+
+#validator img {
+  margin-top: 1em;
+  margin-left: 3pt;
+}
+
+#matricola {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Orienta', sans-serif;
 }

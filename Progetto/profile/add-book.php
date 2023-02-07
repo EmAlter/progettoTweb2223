@@ -151,6 +151,8 @@ if(isset($_POST["n_book"])) {
 
     $db->query("DELETE FROM books_saved WHERE user = $username AND id_book = $book_to_delete;");
 }
+
+
     
     
 } catch (Exception | PDOException $error) {

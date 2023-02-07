@@ -24,13 +24,13 @@ if(isset($_POST["data_books"])) {
         
         $username = $db->quote($username);
 
-        $exist = $db->query("SELECT id_book FROM books_saved WHERE id_book = $id");
+        $exist = $db->query("SELECT id_book FROM books_saved WHERE id_book = $id AND user = $username;");
         $exist = $exist->fetch(PDO::FETCH_ASSOC);
 
         /*Se il libro non si trova nel database allora lo aggiunge*/
         if(!$exist) {
-        $db->query("INSERT INTO books_saved(user, id_book, title, date)
-                    VALUES($username, $id, $title, $today);");
+        $db->query("INSERT INTO books_saved(user, id_book, title, date, rating)
+                    VALUES($username, $id, $title, $today, NULL);");
                     throw new Exception("Added");
         }
         else {

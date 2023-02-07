@@ -24,7 +24,7 @@ include("../functions/resolve_samesite_error.php");
     <div class="all_info_container">
         <div class="profile_container">
             <div class="profile_info">
-                <h2 id="username"> <?= $_SESSION["username"] ?>'s profile</h2>
+                <h2 id="username"> <span><?= $_SESSION["username"] ?></span>'s profile</h2>
                 <div id="name"></div>
                 <div id="lastname"></div>
                 <div>Date of birth: <span id="birth"></span></div>

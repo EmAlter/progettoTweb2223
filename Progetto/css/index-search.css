@@ -18,11 +18,6 @@ h2 {
     color: darkcyan;
 }
 
-.results {
-    width: 100%;
-    height: 100%;
-}
-
 #searchbar {
     margin-left: auto;
     margin-right: auto;
@@ -102,10 +97,12 @@ h2 {
     width: 125pt;
 }
 
-p, .err {
+p,
+.err {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
+
 .err {
     color: red;
 }

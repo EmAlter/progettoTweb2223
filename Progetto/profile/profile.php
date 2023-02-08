@@ -27,8 +27,8 @@ include("../functions/resolve_samesite_error.php");
                 <h2 id="username"> <span><?= $_SESSION["username"] ?></span>'s profile</h2>
                 <div id="name"></div>
                 <div id="lastname"></div>
-                <div>Date of birth: <span id="birth"></span></div>
-                <div>Account created: <span id="dateofcreation"></span></div>
+                <div class="for_css">Date of birth: <span id="birth"></span></div>
+                <div class="for_css">Account created: <br><span id="dateofcreation"></span></div>
             </div>
 
             <div class="table_saved">

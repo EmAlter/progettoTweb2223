@@ -45,7 +45,14 @@ function searchBooks() {
 };
 
 /*Aggiunge un'icona affianco ad alcuni protagonisti che appaiono in più libri
-NB: non è stata implementata un'aggiunta per futuri possibili protagonisti*/ 
+NB: non è stata implementata un'aggiunta per futuri possibili protagonisti,
+di conseguenza funziona solo con:
+- Hercule Poirot
+- Miss Marple
+- Tommy and Tuppence
+- Sherlock Holmes
+- Ispettore Montalbano
+*/ 
 function checkMain(author_icon, main_character) {
     if (main_character.localeCompare("Hercule Poirot") == 0) {
         return author_icon += '<img id="icon" src="/Progetto/img/main-characters/moustache-poirot.png">';
@@ -74,7 +81,7 @@ function saveId(data) {
         type: "GET",
         contentType: "application/json",
         data: { "id": data, "path": path },
-        success: function (result) {
+        success: function () {
             window.location = "/Progetto/bookinfo/book.php";
         }
     });

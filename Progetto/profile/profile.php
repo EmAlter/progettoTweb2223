@@ -55,6 +55,7 @@ include("../functions/resolve_samesite_error.php");
                 <div class="add_new_author">
 
                     <fieldset>
+                    <legend>NEW AUTHOR</legend>
                         <label><input type="text" id="fullname" size="15" placeholder="Fullname"><br></label>
                         <label><input type="text" id="birth_author" maxlength="4" size="15" placeholder="Date of birth">
                             <input type="checkbox" id="before_Christ_author" name="before_Christ_author" value="before_Christ_author">(Before Christ?)<br></label>
@@ -68,6 +69,7 @@ include("../functions/resolve_samesite_error.php");
 
                 <div class="add_new_book">
                     <fieldset>
+                        <legend>NEW BOOK</legend>
                         <label><input type="text" id="book_name" name="book_name" size="15" placeholder="Book name"><br></label>
                         <label><input type="text" id="author_id" name="author_id" size="15" placeholder="Author ID"><br></label>
                         <label><input type="text" id="year" name="year" maxlength="4" size="15" placeholder="Year of publication">

@@ -164,6 +164,7 @@ function bookInList() {
             var j_rated = JSON.parse(data);
             if (j_rated.rating) {
                 $("#ratg").show();
+                //Setta il valore del menu dropdown per le future ricariche della pagina
                 $("#ratg").val(j_rated.rating);
             }
         }

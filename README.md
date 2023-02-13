@@ -5,6 +5,6 @@ Repository di Emanuele Di Maggio (883368)
 
 ## Getting started
 
-Il repository è organizzato il cartelle:
-- esercizi dati surante il corso;
+Il repository è organizzato in cartelle:
+- esercizi dati durante il corso;
 - progetto finale.

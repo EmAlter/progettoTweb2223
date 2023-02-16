@@ -3,7 +3,7 @@
 Repository di Emanuele Di Maggio (883368)
 
 
-## Getting started
+## Organizzazione
 
 Il repository è organizzato in cartelle:
 - esercizi dati durante il corso;

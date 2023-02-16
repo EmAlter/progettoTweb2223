@@ -36,7 +36,7 @@ try {
                     VALUES($username, $password, $todaydate, $radio);");
                 
             $db->query("INSERT INTO user_info(info_nickname, firstname, lastname, birth) 
-                    VALUES($username, $firstname, $lastname, '$birth');");
+                    VALUES($username, $firstname, $lastname, $birth);");
 
 
             $_SESSION["username"] = str_replace("'", "", $username);

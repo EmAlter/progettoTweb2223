@@ -1,10 +1,3 @@
 # TECONOLOGIE WEB 2022/2023
+Il progetto prevede la creazione e gestione di un sito web utilizzando HTML, CSS e JavScript (in particolare Ajax)
 
-Repository di Emanuele Di Maggio (883368)
-
-
-## Organizzazione
-
-Il repository è organizzato in cartelle:
-- esercizi dati durante il corso;
-- progetto finale.
